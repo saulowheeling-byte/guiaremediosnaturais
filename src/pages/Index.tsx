@@ -274,7 +274,7 @@ const Index = () => {
                   asChild
                   className="bg-gradient-cta text-accent-foreground hover:opacity-90 w-full text-lg md:text-2xl py-8 rounded-full shadow-cta font-bold animate-pulse-glow"
                 >
-                  <a href="https://pay.cakto.com.br/dy8g9s9_636073">
+                  <a href="https://pay.lowify.com.br/checkout?product_id=PhsXjU">
                     QUERO GARANTIR O MEU AGORA →
                   </a>
                 </Button>
@@ -338,7 +338,7 @@ const Index = () => {
             asChild
             className="bg-gradient-cta text-accent-foreground hover:opacity-90 text-lg md:text-xl py-7 px-10 rounded-full shadow-cta font-bold"
           >
-            <a href="https://pay.cakto.com.br/dy8g9s9_636073">
+            <a href="https://pay.lowify.com.br/checkout?product_id=PhsXjU">
               QUERO MEU GUIA POR R$ 19,90
             </a>
           </Button>
