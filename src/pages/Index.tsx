@@ -5,6 +5,8 @@ import {
   Salad, ChevronDown, Star, ArrowRight, BadgeCheck, Award, Users, Zap
 } from "lucide-react";
 import guiaMockup from "@/assets/ebook-mockup.png";
+import sabedoriaColheita from "@/assets/sabedoria-senhora.png";
+import sabedoriaPreparo from "@/assets/sabedoria-senhor.png";
 
 const CHECKOUT_URL = "https://pay.lowify.com.br/checkout.php?product_id=PhsXjU";
 
@@ -222,28 +224,56 @@ const Index = () => {
 
       {/* STORYTELLING */}
       <section className="py-12 sm:py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 max-w-4xl text-center" data-reveal>
-          <Sprout className="w-12 h-12 mx-auto mb-5 text-accent" />
-          <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6">
-            Antes das farmácias, nossos avós já sabiam cuidar da saúde com o que a terra oferecia
-          </h2>
-          <p className="text-lg sm:text-xl text-primary-foreground/85 mb-10 max-w-2xl mx-auto">
-            Esse conhecimento atravessou gerações — simples, natural e acessível. E não pode se perder.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-5">
-            {[
-              { icon: Users, t: "Conhecimento passado por gerações" },
-              { icon: Leaf, t: "Simples, natural e acessível" },
-              { icon: BookOpen, t: "Não pode se perder" },
-            ].map(({ icon: Icon, t }) => (
-              <div key={t} className="bg-primary-foreground/10 backdrop-blur rounded-2xl p-6 border border-primary-foreground/15">
-                <Icon className="w-8 h-8 mx-auto mb-3 text-accent" />
-                <p className="font-semibold">{t}</p>
-              </div>
-            ))}
+        <div className="container mx-auto px-4 max-w-5xl" data-reveal>
+          <div className="text-center mb-12">
+            <Sprout className="w-12 h-12 mx-auto mb-5 text-accent" />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6">
+              Antes das farmácias, nossos avós já sabiam cuidar da saúde com o que a terra oferecia
+            </h2>
+            <p className="text-lg sm:text-xl text-primary-foreground/85 max-w-2xl mx-auto">
+              Um conhecimento que nasceu no quintal, no sertão e nas mãos calejadas de quem viveu da terra — simples, natural e verdadeiro.
+            </p>
           </div>
+
+          {/* Bloco 1 - colheita */}
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-10">
+            <div className="rounded-3xl overflow-hidden shadow-2xl order-1">
+              <img
+                src={sabedoriaColheita}
+                alt="Senhor colhendo raízes e ervas medicinais no mato"
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="order-2">
+              <h3 className="text-2xl sm:text-3xl mb-4 text-accent">Direto da terra, como sempre foi</h3>
+              <p className="text-lg text-primary-foreground/90 leading-relaxed">
+                Cada raiz, casca e folha tem uma finalidade — e quem viveu no campo conhecia todas. Esse guia resgata esse saber que estava quase perdido, ensinando a identificar e usar cada planta com segurança.
+              </p>
+            </div>
+          </div>
+
+          {/* Bloco 2 - preparo */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="md:order-2 rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={sabedoriaPreparo}
+                alt="Senhora preparando remédios naturais com pilão e ervas"
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="md:order-1">
+              <h3 className="text-2xl sm:text-3xl mb-4 text-accent">Receitas que curaram gerações</h3>
+              <p className="text-lg text-primary-foreground/90 leading-relaxed">
+                Xaropes, chás, garrafadas e cataplasmas que aliviavam gripes, dores e inflamações antes mesmo de existir farmácia na esquina. Tudo explicado passo a passo, com medidas certas e modo de preparo simples.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
+
 
       {/* PROVA SOCIAL */}
       <section className="py-12 sm:py-20 bg-background overflow-hidden">
@@ -282,7 +312,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <SectionTitle kicker="Oferta especial">Garanta o seu agora com desconto</SectionTitle>
 
-          <div className="max-w-2xl mx-auto bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-6 sm:p-10 relative" data-reveal>
+          <div className="max-w-xl mx-auto bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-6 sm:p-8 relative" data-reveal>
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 gradient-cta text-cta-foreground text-[11px] sm:text-sm font-bold px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-full shadow-cta inline-flex items-center gap-1.5 sm:gap-2 whitespace-nowrap max-w-[92%]">
               <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" /> OFERTA POR TEMPO LIMITADO
             </div>
