@@ -312,7 +312,7 @@ const Index = () => {
             <div className="text-center mb-7">
               <p className="text-muted-foreground line-through text-lg">De R$ 97,00</p>
               <p className="text-5xl sm:text-6xl font-extrabold text-highlight my-1">R$ 19,90</p>
-              <p className="text-muted-foreground text-lg"></p>
+              <p className="text-muted-foreground text-lg">ou 3x de R$ 6,90 no cartão</p>
             </div>
 
             <div className="flex justify-center">
